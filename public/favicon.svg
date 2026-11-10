@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">TopBook</title>
+  <desc id="desc">Livro aberto roxo e dourado com uma estrela</desc>
+  <defs>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6f27a8" />
+      <stop offset="1" stop-color="#261046" />
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8e4" />
+      <stop offset="1" stop-color="#e7b85f" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#120d20" />
+  <path d="M8 47c8-2 16-1 24 5 8-6 16-7 24-5V24c-8-3-16-2-24 4-8-6-16-7-24-4Z" fill="url(#cover)" stroke="#d9a33d" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M11 27c7-2 14-1 21 4v17c-7-5-14-6-21-4Zm42 0c-7-2-14-1-21 4v17c7-5 14-6 21-4Z" fill="url(#page)" stroke="#f5d27a" stroke-width="1.2" stroke-linejoin="round" />
+  <path d="m32 10 2.5 6.5L41 19l-6.5 2.5L32 28l-2.5-6.5L23 19l6.5-2.5Z" fill="#fff4bd" stroke="#d9a33d" stroke-width="1.2" filter="url(#glow)" />
+</svg>

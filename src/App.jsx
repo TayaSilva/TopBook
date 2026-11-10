@@ -23,6 +23,7 @@ export default function App() {
         <Route path="/esqueci-senha/codigo" element={<CodigoSenha />} />
         <Route path="/esqueci-senha/nova-senha" element={<NovaSenha />} />
       </Route>
+      <Route path="/login" element={<Navigate to="/" replace />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
     </FairyProvider>
